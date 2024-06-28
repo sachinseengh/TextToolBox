@@ -6,8 +6,14 @@ import './App.css';
 import Navbar from './components/Navbar'
 import TextBox from './components/TextBox'
 import Alert from './components/Alert'
-// import About from './components/About'
+import About from './components/About'
+import {RouterProvider, createBrowserRouter } from 'react-router-dom'
+
+
+
 function App() {
+
+ 
   const toggleMode=()=>{
 
     if(mode==="light"){
@@ -35,18 +41,37 @@ function App() {
       setAlert(null);
     },1500)
   }
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element:<><Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+      <Alert alert={alert}/>
+      <TextBox title="Enter you text to analyze" mode={mode}/></>
+    },
+    {
+      path:"/about",
+      element:<><Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+      <Alert alert={alert}/>
+      <About/></>
+    }
+  ])
+
   return (
 <>
 
 {/* to pass props  it works like arguments to a function*/}
-<Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
-<Alert alert={alert}/>
+{/* <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+
 <div className="container">
   <TextBox title="Enter you text to analyze" mode={mode}/>
-</div>
+</div> */}
 
 
 {/* <About/> */}
+
+
+<RouterProvider router={router}/>
 
 
 
