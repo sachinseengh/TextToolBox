@@ -29,6 +29,9 @@ function App() {
   }
   const [mode,setMode]=useState("light");
 
+
+
+
   //for alert message
   const [alert,setAlert] = useState(null);
 
@@ -46,14 +49,14 @@ function App() {
     {
       path: "/",
       element:<><Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
-      <Alert alert={alert}/>
+      <Alert alert={alert} mode={mode}/>
       <TextBox title="Enter you text to analyze" mode={mode}/></>
     },
     {
       path:"/about",
       element:<><Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
-      <About/></>
+      <About mode={mode}/></>
     }
   ])
 
