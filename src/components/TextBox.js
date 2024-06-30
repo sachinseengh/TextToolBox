@@ -47,18 +47,18 @@ export default function TextBox(props){
 <div class="mb-3">
   <h1 className='my-3' >{props.title}</h1>
   <textarea className="form-control" id="exampleFormControlTextarea1"
-   rows="8"  value={text} onChange={Onchange} style={{backgroundColor:props.mode==='dark'?'grey':'white',color:props.mode==='light'?'black':'white'}} ></textarea>
+   rows="8"  value={text} onChange={Onchange} style={{backgroundColor:props.mode==='dark'?'#042743':'white',color:props.mode==='light'?'black':'white'}} ></textarea>
 </div>
-<button className="btn btn-primary mx-2" onClick={Up}>Convert to UpperCase</button>
-<button className="btn btn-primary mx-2 my-1" onClick={Lp}>Convert to LowerCase</button>
-<button className="btn btn-primary mx-2 my-1" onClick={Sc}>Sentence Case</button>
-<button className="btn btn-primary mx-2 my-1" onClick={Tc}>Title Case</button>
-<button className="btn btn-primary mx-2 my-1" onClick={handleExtraSpace}>Remove Extra Spaces</button>
+<button  disabled={text.length===0} className="btn btn-primary mx-2" onClick={Up}>Convert to UpperCase</button>
+<button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={Lp}>Convert to LowerCase</button>
+<button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={Sc}>Sentence Case</button>
+<button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={Tc}>Title Case</button>
+<button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={handleExtraSpace}>Remove Extra Spaces</button>
 </div>
 
 <div className="container my-3" style={{color:props.mode==='light'?'black':'white'}}>
     <h2>Your text Summary</h2>
-    <p><b>{text.split(" ").filter((element)=>{return element.length !== 0}).length}</b> Words and <b>{text.length}</b> letters </p> 
+    <p><b>{text.split("/\s+/").filter((element)=>{return element.length !== 0}).length}</b> Words and <b>{text.length}</b> letters </p> 
 
     <p><b>{0.008* text.split(" ").length}</b> Minutes read</p>
     <h2>Preview</h2>
