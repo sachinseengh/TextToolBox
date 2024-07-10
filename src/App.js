@@ -6,8 +6,8 @@ import './App.css';
 import Navbar from './components/Navbar'
 import TextBox from './components/TextBox'
 import Alert from './components/Alert'
-import About from './components/About'
-import {RouterProvider, createBrowserRouter } from 'react-router-dom'
+// import About from './components/About'
+// import {RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 
 
@@ -45,36 +45,38 @@ function App() {
     },1500)
   }
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element:<><Navbar title="TextToolBox" mode={mode} toggleMode={toggleMode}/>
-      <Alert alert={alert} mode={mode}/>
-      <TextBox title="Enter you text to analyze" mode={mode}/></>
-    },
-    {
-      path:"/about",
-      element:<><Navbar title="TextToolBox" mode={mode} toggleMode={toggleMode}/>
-      <Alert alert={alert}/>
-      <About mode={mode}/></>
-    }
-  ])
+  //About page is removed because it doesnot work properly with github pages
+
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element:<><Navbar title="TextToolBox" mode={mode} toggleMode={toggleMode}/>
+  //     
+  //     <TextBox title="Enter you text to analyze" mode={mode}/></>
+  //   },
+  //   {
+  //     path:"/about",
+  //     element:<><Navbar title="TextToolBox" mode={mode} toggleMode={toggleMode}/>
+  //     <Alert alert={alert}/>
+  //     <About mode={mode}/></>
+  //   }
+  // ])
 
   return (
 <>
 
 {/* to pass props  it works like arguments to a function*/}
-{/* <Navbar title="TextToolBox" mode={mode} toggleMode={toggleMode}/>
-
+<Navbar title="TextToolBox" mode={mode} toggleMode={toggleMode}/>
+<Alert alert={alert} mode={mode}/>
 <div className="container">
   <TextBox title="Enter you text to analyze" mode={mode}/>
-</div> */}
+</div>
 
 
 {/* <About/> */}
 
 
-<RouterProvider router={router}/>
+{/* <RouterProvider router={router}/> */}
 
 
 
