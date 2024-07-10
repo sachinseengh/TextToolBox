@@ -1,3 +1,20 @@
+# TextToolBox 
+
+
+
+## A React App that allow the features for text manipulation like Case conversion,Sentence Case,Title Case,Remove Extra spaces
+
+
+## Frontend
+
+
+
+<img src="https://github.com/sachinseengh/TextToolBox/assets/108042077/f0633241-93eb-4dd5-8644-734492b75974">
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
