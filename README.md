@@ -4,7 +4,7 @@
 
 ## A React App that allow the features for text manipulation like Case conversion,Sentence Case,Title Case,Remove Extra spaces
 
-
+[ Click to Preview](https://sachinseengh.github.io/TextToolBox/)
 ## Frontend
 
 
