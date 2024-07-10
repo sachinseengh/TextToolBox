@@ -48,13 +48,13 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element:<><Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+      element:<><Navbar title="TextToolBox" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert} mode={mode}/>
       <TextBox title="Enter you text to analyze" mode={mode}/></>
     },
     {
       path:"/about",
-      element:<><Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+      element:<><Navbar title="TextToolBox" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
       <About mode={mode}/></>
     }
@@ -64,7 +64,7 @@ function App() {
 <>
 
 {/* to pass props  it works like arguments to a function*/}
-{/* <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+{/* <Navbar title="TextToolBox" mode={mode} toggleMode={toggleMode}/>
 
 <div className="container">
   <TextBox title="Enter you text to analyze" mode={mode}/>

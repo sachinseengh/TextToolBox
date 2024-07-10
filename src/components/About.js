@@ -31,7 +31,7 @@ export default function About(props) {
               aria-controls="collapseOne"
               style={state}
             >
-              Accordion Item #1
+              <b>UpperCase and LowerCase</b>
             </button>
           </h2>
           <div
@@ -41,14 +41,7 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={state}>
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classNamees that we use to style each element. These classNamees
-              control the overall appearance, as well as the showing and hiding
-              via CSS transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              TextToolBox provides allow you a feature to convert your text into uppercase or lowercase
             </div>
           </div>
         </div>
@@ -63,7 +56,7 @@ export default function About(props) {
               aria-controls="collapseTwo"
               style={state}
             >
-              Accordion Item #2
+             <b> Sentence Case</b>
             </button>
           </h2>
           <div
@@ -73,14 +66,7 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={state}>
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classNamees that we use to style each element. These classNamees
-              control the overall appearance, as well as the showing and hiding
-              via CSS transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              TextToolBox allows you to convert your text into sentence case(Capitalize the first letter of you text)
             </div>
           </div>
         </div>
@@ -95,7 +81,7 @@ export default function About(props) {
               aria-controls="collapseThree"
               style={state}
             >
-              Accordion Item #3
+              Remove Extra Space
             </button>
           </h2>
           <div
@@ -105,14 +91,7 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={state}>
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classNamees that we use to style each element. These classNamees
-              control the overall appearance, as well as the showing and hiding
-              via CSS transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              Sometime we copy text from different website which contains mutiple spaces.TextToolBox helps you to remove the extra spaces
             </div>
           </div>
         </div>
